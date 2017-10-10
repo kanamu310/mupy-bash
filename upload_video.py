@@ -1,10 +1,12 @@
 #!/usr/bin/python
 
+import sys
+sys.path.append("/usr/lib/python3.5/")
+sys.path.append("/usr/lib/python3/")
 import http.client
 import httplib2
 import os
 import random
-import sys
 import time
 
 from apiclient.discovery import build
