@@ -4,7 +4,7 @@ from pylab import *
 
 # オリジナルモジュール
 import File_open
-import test
+import create_sound
 import mymovie
 
 if __name__ == "__main__":
@@ -16,8 +16,8 @@ if __name__ == "__main__":
     freqList = [int(i) for i in freqList]
 
     for f in freqList:
-        data = test.createSinWave(1.0, f, 8000.0, 2.0)
-        #test.play(data, 8000, 16)
+        data = create_sound.createSinWave(1.0, f, 8000.0, 2.0)
+        #create_sound.play(data, 8000, 16)
         datas += data
 
     fname = File_open.save_wave(datas)
